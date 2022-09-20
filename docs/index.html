@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>操作系统笔记</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://cdn.bytedance.com/cdn/mermaid/8.14.0/mermaid.min.js"></script>
+  <script>
+    var num = 0;
+    mermaid.initialize({ startOnLoad: false });
+    window.$docsify = {
+      name: '操作系统笔记',
+      repo: 'https://gitlab.eduxiji.net/alexsondes/oskernel2022-byte-os/',
+      homepage: 'README.md',
+      // homepage: 'https://gitlab.eduxiji.net/alexsondes/oskernel2022-byte-os/raw/main/docs/README.md'
+      markdown: {
+        renderer: {
+          code: function(code, lang) {
+            if (lang === "mermaid") {
+              return (
+                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+              );
+            }
+            return this.origin.code.apply(this, arguments);
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="https://unpkg.com/docsify@4"></script>
+
+  <script src="https://unpkg.com/prismjs@1/components/prism-rust.min.js"></script>
+  <script src="https://unpkg.com/prismjs@1/components/prism-armasm.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+target/
+bootloader/rust-qemu.bin.copy
+os.bin
+Cargo.lock
+src/linker.ld
+write
+asm.S
+.idea/
+kernel-qemu
+sbi-qemu
+.github/classroom

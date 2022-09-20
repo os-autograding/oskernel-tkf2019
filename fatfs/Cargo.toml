@@ -1,0 +1,30 @@
+[package]
+name = "fatfs"
+version = "0.4.0"
+authors = ["Rafał Harabień <rafalh92@outlook.com>"]
+edition = "2018"
+repository = "https://github.com/rafalh/rust-fatfs"
+readme = "README.md"
+keywords = ["fat", "filesystem", "no_std"]
+categories = ["filesystem"]
+license = "MIT"
+description = """
+FAT filesystem library.
+"""
+exclude = [
+    "resources/*",
+]
+
+[features]
+# LFN (Long File Name) support
+lfn = []
+# Use dynamic allocation. When used without std please enable core_io/collections
+alloc = []
+
+# Default features
+default = ["alloc", "lfn"]
+
+[dependencies]
+bitflags = "1.0"
+device = { path = "../device" }
+

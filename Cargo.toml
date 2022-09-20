@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "device",
+    "fatfs",
+    "kernel"
+]
+# default-members = ["kernel"]
+
+[profile.release]
+lto = true
+debug = true

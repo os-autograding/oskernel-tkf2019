@@ -1,0 +1,40 @@
+[package]
+name = "os"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[features]
+board_qemu = []
+board_k210 = []
+not_debug = []
+
+[dependencies]
+riscv = { git = "https://github.com/rcore-os/riscv", features = ["inline-asm"] }
+# riscv = { git = "https://github.com/rust-embedded/riscv" }
+# riscv = "0.7.0"
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
+buddy_system_allocator = "0.8"
+# 虚拟驱动
+virtio-drivers = { path = "../virtio-drivers" }
+
+device_tree = { git = "https://github.com/rcore-os/device_tree-rs" }
+
+bitflags = "1.2.1"
+
+xmas-elf = "0.7.0"
+hashbrown = "0.12.0"
+
+
+k210-pac = { git = "https://github.com/wyfcyx/k210-pac" }
+k210-hal = { git = "https://github.com/wyfcyx/k210-hal" }
+k210-soc = { git = "https://github.com/wyfcyx/k210-soc" }
+
+fatfs = { path = "../fatfs" }
