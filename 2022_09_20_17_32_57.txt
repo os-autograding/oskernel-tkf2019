@@ -1,0 +1,283 @@
+✅ busybox echo #### independent command test pass
+✅ busybox ash -c exit pass
+✅ busybox sh -c exit pass
+✅ busybox clear pass
+✅ busybox date pass
+✅ busybox df pass
+✅ busybox dirname /aaa/bbb pass
+✅ busybox dmesg pass
+✅ busybox du pass
+✅ busybox expr 1 + 1 pass
+✅ busybox false pass
+✅ busybox true pass
+✅ busybox which ls pass
+✅ busybox uname pass
+✅ busybox uptime pass
+✅ busybox printf abcn pass
+✅ busybox ps pass
+✅ busybox pwd pass
+✅ busybox free pass
+✅ busybox hwclock pass
+✅ busybox kill 10 pass
+✅ busybox ls pass
+✅ busybox sleep 1 pass
+✅ busybox echo #### file opration test pass
+✅ busybox touch test.txt pass
+✅ busybox echo hello world > test.txt pass
+✅ busybox cat test.txt pass
+✅ busybox cut -c 3 test.txt pass
+✅ busybox od test.txt pass
+✅ busybox head test.txt pass
+✅ busybox tail test.txt pass
+✅ busybox hexdump -C test.txt pass
+✅ busybox md5sum test.txt pass
+✅ busybox echo ccccccc >> test.txt pass
+✅ busybox echo bbbbbbb >> test.txt pass
+✅ busybox echo aaaaaaa >> test.txt pass
+✅ busybox echo 2222222 >> test.txt pass
+✅ busybox echo 1111111 >> test.txt pass
+✅ busybox sort test.txt | ./busybox uniq pass
+✅ busybox stat test.txt pass
+✅ busybox strings test.txt pass
+✅ busybox wc test.txt pass
+✅ busybox [ -f test.txt ] pass
+✅ busybox more test.txt pass
+✅ busybox rm test.txt pass
+✅ busybox mkdir test_dir pass
+✅ busybox mv test_dir test pass
+✅ busybox rmdir test pass
+✅ busybox grep hello busybox_cmd.txt pass
+✅ busybox cp busybox_cmd.txt busybox_cmd.bak pass
+✅ busybox rm busybox_cmd.bak pass
+✅ busybox find -name busybox_cmd.txt pass
+❌ entry-static.exe argv points 0/1
+❌ entry-static.exe basename points 0/1
+❌ entry-static.exe clocale_mbfuncs points 0/1
+❌ entry-static.exe clock_gettime points 0/1
+❌ entry-static.exe crypt points 0/1
+❌ entry-static.exe dirname points 0/1
+❌ entry-static.exe env points 0/1
+❌ entry-static.exe fdopen points 0/1
+❌ entry-static.exe fnmatch points 0/1
+❌ entry-static.exe fscanf points 0/1
+❌ entry-static.exe fwscanf points 0/1
+❌ entry-static.exe iconv_open points 0/1
+❌ entry-static.exe inet_pton points 0/1
+❌ entry-static.exe mbc points 0/1
+❌ entry-static.exe memstream points 0/1
+❌ entry-static.exe pthread_cancel_points points 0/1
+❌ entry-static.exe pthread_cancel points 0/1
+❌ entry-static.exe pthread_cond points 0/1
+❌ entry-static.exe pthread_tsd points 0/1
+❌ entry-static.exe qsort points 0/1
+❌ entry-static.exe random points 0/1
+❌ entry-static.exe search_hsearch points 0/1
+❌ entry-static.exe search_insque points 0/1
+❌ entry-static.exe search_lsearch points 0/1
+❌ entry-static.exe search_tsearch points 0/1
+❌ entry-static.exe setjmp points 0/1
+❌ entry-static.exe snprintf points 0/1
+❌ entry-static.exe socket points 0/1
+❌ entry-static.exe sscanf points 0/1
+❌ entry-static.exe sscanf_long points 0/1
+❌ entry-static.exe stat points 0/1
+❌ entry-static.exe strftime points 0/1
+❌ entry-static.exe string points 0/1
+❌ entry-static.exe string_memcpy points 0/1
+❌ entry-static.exe string_memmem points 0/1
+❌ entry-static.exe string_memset points 0/1
+❌ entry-static.exe string_strchr points 0/1
+❌ entry-static.exe string_strcspn points 0/1
+❌ entry-static.exe string_strstr points 0/1
+❌ entry-static.exe strptime points 0/1
+❌ entry-static.exe strtod points 0/1
+❌ entry-static.exe strtod_simple points 0/1
+❌ entry-static.exe strtof points 0/1
+❌ entry-static.exe strtol points 0/1
+❌ entry-static.exe strtold points 0/1
+❌ entry-static.exe swprintf points 0/1
+❌ entry-static.exe tgmath points 0/1
+❌ entry-static.exe time points 0/1
+❌ entry-static.exe tls_align points 0/1
+❌ entry-static.exe udiv points 0/1
+❌ entry-static.exe ungetc points 0/1
+❌ entry-static.exe utime points 0/1
+❌ entry-static.exe wcsstr points 0/1
+❌ entry-static.exe wcstol points 0/1
+❌ entry-static.exe pleval points 0/1
+❌ entry-static.exe daemon_failure points 0/1
+❌ entry-static.exe dn_expand_empty points 0/1
+❌ entry-static.exe dn_expand_ptr_0 points 0/1
+❌ entry-static.exe fflush_exit points 0/1
+❌ entry-static.exe fgets_eof points 0/1
+❌ entry-static.exe fgetwc_buffering points 0/1
+❌ entry-static.exe fpclassify_invalid_ld80 points 0/1
+❌ entry-static.exe ftello_unflushed_append points 0/1
+❌ entry-static.exe getpwnam_r_crash points 0/1
+❌ entry-static.exe getpwnam_r_errno points 0/1
+❌ entry-static.exe iconv_roundtrips points 0/1
+❌ entry-static.exe inet_ntop_v4mapped points 0/1
+❌ entry-static.exe inet_pton_empty_last_field points 0/1
+❌ entry-static.exe iswspace_null points 0/1
+❌ entry-static.exe lrand48_signextend points 0/1
+❌ entry-static.exe lseek_large points 0/1
+❌ entry-static.exe malloc_0 points 0/1
+❌ entry-static.exe mbsrtowcs_overflow points 0/1
+❌ entry-static.exe memmem_oob_read points 0/1
+❌ entry-static.exe memmem_oob points 0/1
+❌ entry-static.exe mkdtemp_failure points 0/1
+❌ entry-static.exe mkstemp_failure points 0/1
+❌ entry-static.exe printf_1e9_oob points 0/1
+❌ entry-static.exe printf_fmt_g_round points 0/1
+❌ entry-static.exe printf_fmt_g_zeros points 0/1
+❌ entry-static.exe printf_fmt_n points 0/1
+❌ entry-static.exe pthread_robust_detach points 0/1
+❌ entry-static.exe pthread_cancel_sem_wait points 0/1
+❌ entry-static.exe pthread_cond_smasher points 0/1
+❌ entry-static.exe pthread_condattr_setclock points 0/1
+❌ entry-static.exe pthread_exit_cancel points 0/1
+❌ entry-static.exe pthread_once_deadlock points 0/1
+❌ entry-static.exe pthread_rwlock_ebusy points 0/1
+❌ entry-static.exe putenv_doublefree points 0/1
+❌ entry-static.exe regex_backref_0 points 0/1
+❌ entry-static.exe regex_bracket_icase points 0/1
+❌ entry-static.exe regex_ere_backref points 0/1
+❌ entry-static.exe regex_escaped_high_byte points 0/1
+❌ entry-static.exe regex_negated_range points 0/1
+❌ entry-static.exe regexec_nosub points 0/1
+❌ entry-static.exe rewind_clear_error points 0/1
+❌ entry-static.exe rlimit_open_files points 0/1
+❌ entry-static.exe scanf_bytes_consumed points 0/1
+❌ entry-static.exe scanf_match_literal_eof points 0/1
+❌ entry-static.exe scanf_nullbyte_char points 0/1
+❌ entry-static.exe setvbuf_unget points 0/1
+❌ entry-static.exe sigprocmask_internal points 0/1
+❌ entry-static.exe sscanf_eof points 0/1
+❌ entry-static.exe statvfs points 0/1
+❌ entry-static.exe strverscmp points 0/1
+❌ entry-static.exe syscall_sign_extend points 0/1
+❌ entry-static.exe uselocale_0 points 0/1
+❌ entry-static.exe wcsncpy_read_overflow points 0/1
+❌ entry-static.exe wcsstr_false_negative points 0/1
+✅ entry-dynamic.exe argv pass
+✅ entry-dynamic.exe basename pass
+✅ entry-dynamic.exe clocale_mbfuncs pass
+✅ entry-dynamic.exe clock_gettime pass
+✅ entry-dynamic.exe crypt pass
+✅ entry-dynamic.exe dirname pass
+✅ entry-dynamic.exe dlopen pass
+✅ entry-dynamic.exe env pass
+❌ entry-dynamic.exe fdopen points 0/1
+✅ entry-dynamic.exe fnmatch pass
+❌ entry-dynamic.exe fscanf points 0/1
+❌ entry-dynamic.exe fwscanf points 0/1
+✅ entry-dynamic.exe iconv_open pass
+✅ entry-dynamic.exe inet_pton pass
+✅ entry-dynamic.exe mbc pass
+✅ entry-dynamic.exe memstream pass
+❌ entry-dynamic.exe pthread_cancel_points points 0/1
+❌ entry-dynamic.exe pthread_cancel points 0/1
+❌ entry-dynamic.exe pthread_cond points 0/1
+❌ entry-dynamic.exe pthread_tsd points 0/1
+❌ entry-dynamic.exe qsort points 0/1
+❌ entry-dynamic.exe random points 0/1
+❌ entry-dynamic.exe search_hsearch points 0/1
+❌ entry-dynamic.exe search_insque points 0/1
+❌ entry-dynamic.exe search_lsearch points 0/1
+❌ entry-dynamic.exe search_tsearch points 0/1
+❌ entry-dynamic.exe sem_init points 0/1
+❌ entry-dynamic.exe setjmp points 0/1
+❌ entry-dynamic.exe snprintf points 0/1
+❌ entry-dynamic.exe socket points 0/1
+❌ entry-dynamic.exe sscanf points 0/1
+❌ entry-dynamic.exe sscanf_long points 0/1
+❌ entry-dynamic.exe stat points 0/1
+❌ entry-dynamic.exe strftime points 0/1
+❌ entry-dynamic.exe string points 0/1
+❌ entry-dynamic.exe string_memcpy points 0/1
+❌ entry-dynamic.exe string_memmem points 0/1
+❌ entry-dynamic.exe string_memset points 0/1
+❌ entry-dynamic.exe string_strchr points 0/1
+❌ entry-dynamic.exe string_strcspn points 0/1
+❌ entry-dynamic.exe string_strstr points 0/1
+❌ entry-dynamic.exe strptime points 0/1
+❌ entry-dynamic.exe strtod points 0/1
+❌ entry-dynamic.exe strtod_simple points 0/1
+❌ entry-dynamic.exe strtof points 0/1
+❌ entry-dynamic.exe strtol points 0/1
+❌ entry-dynamic.exe strtold points 0/1
+❌ entry-dynamic.exe swprintf points 0/1
+❌ entry-dynamic.exe tgmath points 0/1
+❌ entry-dynamic.exe time points 0/1
+❌ entry-dynamic.exe tls_init points 0/1
+❌ entry-dynamic.exe tls_local_exec points 0/1
+❌ entry-dynamic.exe udiv points 0/1
+❌ entry-dynamic.exe ungetc points 0/1
+❌ entry-dynamic.exe utime points 0/1
+❌ entry-dynamic.exe wcsstr points 0/1
+❌ entry-dynamic.exe wcstol points 0/1
+❌ entry-dynamic.exe daemon_failure points 0/1
+❌ entry-dynamic.exe dn_expand_empty points 0/1
+❌ entry-dynamic.exe dn_expand_ptr_0 points 0/1
+❌ entry-dynamic.exe fflush_exit points 0/1
+❌ entry-dynamic.exe fgets_eof points 0/1
+❌ entry-dynamic.exe fgetwc_buffering points 0/1
+❌ entry-dynamic.exe fpclassify_invalid_ld80 points 0/1
+❌ entry-dynamic.exe ftello_unflushed_append points 0/1
+❌ entry-dynamic.exe getpwnam_r_crash points 0/1
+❌ entry-dynamic.exe getpwnam_r_errno points 0/1
+❌ entry-dynamic.exe iconv_roundtrips points 0/1
+❌ entry-dynamic.exe inet_ntop_v4mapped points 0/1
+❌ entry-dynamic.exe inet_pton_empty_last_field points 0/1
+❌ entry-dynamic.exe iswspace_null points 0/1
+❌ entry-dynamic.exe lrand48_signextend points 0/1
+❌ entry-dynamic.exe lseek_large points 0/1
+❌ entry-dynamic.exe malloc_0 points 0/1
+❌ entry-dynamic.exe mbsrtowcs_overflow points 0/1
+❌ entry-dynamic.exe memmem_oob_read points 0/1
+❌ entry-dynamic.exe memmem_oob points 0/1
+❌ entry-dynamic.exe mkdtemp_failure points 0/1
+❌ entry-dynamic.exe mkstemp_failure points 0/1
+❌ entry-dynamic.exe printf_1e9_oob points 0/1
+❌ entry-dynamic.exe printf_fmt_g_round points 0/1
+❌ entry-dynamic.exe printf_fmt_g_zeros points 0/1
+❌ entry-dynamic.exe printf_fmt_n points 0/1
+❌ entry-dynamic.exe pthread_robust_detach points 0/1
+❌ entry-dynamic.exe pthread_cond_smasher points 0/1
+❌ entry-dynamic.exe pthread_condattr_setclock points 0/1
+❌ entry-dynamic.exe pthread_exit_cancel points 0/1
+❌ entry-dynamic.exe pthread_once_deadlock points 0/1
+❌ entry-dynamic.exe pthread_rwlock_ebusy points 0/1
+❌ entry-dynamic.exe putenv_doublefree points 0/1
+❌ entry-dynamic.exe regex_backref_0 points 0/1
+❌ entry-dynamic.exe regex_bracket_icase points 0/1
+❌ entry-dynamic.exe regex_ere_backref points 0/1
+❌ entry-dynamic.exe regex_escaped_high_byte points 0/1
+❌ entry-dynamic.exe regex_negated_range points 0/1
+❌ entry-dynamic.exe regexec_nosub points 0/1
+❌ entry-dynamic.exe rewind_clear_error points 0/1
+❌ entry-dynamic.exe rlimit_open_files points 0/1
+❌ entry-dynamic.exe scanf_bytes_consumed points 0/1
+❌ entry-dynamic.exe scanf_match_literal_eof points 0/1
+❌ entry-dynamic.exe scanf_nullbyte_char points 0/1
+❌ entry-dynamic.exe setvbuf_unget points 0/1
+❌ entry-dynamic.exe sigprocmask_internal points 0/1
+❌ entry-dynamic.exe sscanf_eof points 0/1
+❌ entry-dynamic.exe statvfs points 0/1
+❌ entry-dynamic.exe strverscmp points 0/1
+❌ entry-dynamic.exe syscall_sign_extend points 0/1
+❌ entry-dynamic.exe tls_get_new_dtv points 0/1
+❌ entry-dynamic.exe uselocale_0 points 0/1
+❌ entry-dynamic.exe wcsncpy_read_overflow points 0/1
+❌ entry-dynamic.exe wcsstr_false_negative points 0/1
+✅ lua date.lua pass
+✅ lua file_io.lua pass
+✅ lua max_min.lua pass
+✅ lua random.lua pass
+✅ lua remove.lua pass
+✅ lua round_num.lua pass
+✅ lua sin30.lua pass
+✅ lua sort.lua pass
+✅ lua strings.lua pass
+
+Points: 74/281
